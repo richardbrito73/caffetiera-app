@@ -1,0 +1,74 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1 class="site-heading text-center text-white d-none d-lg-block">
+  <span class="site-heading-upper text-primary mb-3">L'autentico caffè d'italia</span>
+  <span class="site-heading-lower">La Caffettiera</span>
+</h1>
+
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.html">La Caffettiera</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" [routerLink]="['/home']" [routerLinkActive]="['active']">Inicio</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" [routerLink]="['/history']" [routerLinkActive]="['active']">Historia</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" [routerLink]="['/services']" [routerLinkActive]="['active']">Servicios</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" [routerLink]="['/visit-us']" [routerLinkActive]="['active']">Visítanos</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" [routerLink]="['/contact']" [routerLinkActive]="['active']">Contacto</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" [routerLink]="['/blog']" [routerLinkActive]="['active']">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- routing -->
+<router-outlet></router-outlet>
+
+<!-- Pié de página -->
+<footer class="footer text-faded text-center py-5">
+  <div class="container">
+    <p class="m-0">
+      <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	          </span>
+      </a>
+      <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	          </span>
+      </a>
+      <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+	          </span>
+      </a>
+    </p>
+    <p class="m-0 mbt">
+      <a [routerLink]="['/privacy-policy']" class="link">Política de privacidad</a> ·
+      <a [routerLink]="['/legal']" class="link">Aviso legal</a> ·
+      <a [routerLink]="['/cookies']" class="link">Cookies</a>
+    </p>
+    <p class="m-0 mbt1">&copy; La Caffettiera 2018</p>
+  </div>
+</footer>
+
